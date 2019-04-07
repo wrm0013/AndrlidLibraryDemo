@@ -1,0 +1,67 @@
+ext {
+    isPushRelese = true //配置是否是正式环境的推送
+
+    android = [
+            applicationId                  : "com.example.wangruiming.myapplication",
+            compileSdkVersion              : 28,
+            buildToolsVersion              : "28.0.3",
+            minSdkVersion                  : 19,
+            targetSdkVersion               : 27,
+            versionCode                    : 58,
+            versionName                    : '4.8.1',
+            appVersionCode                 : 481,
+    ]
+
+    //权限管理的版本号
+    permissionAndroid = [
+            versionCode                    : 1,
+            versionName                    : '1.0',
+    ]
+
+    //基础库
+    baseLibrary = [
+            versionCode                    : 1,
+            versionName                    : '1.0',
+    ]
+
+    libVersion = [
+            supportAppcompatVersion = "28.0.0",
+            testRunner = "1.0.2",
+            testEspresso = "3.0.2",
+            junit = "4.12",
+            rxjava = "2.2.2",
+            rxandroid = "2.1.0",
+            rxlifecycle = "1.0",
+            rxlifecycle_components = "1.0",
+            retrofit  = "2.4.0",
+            gson_converter = "2.4.0",
+            scalars_converter = "2.4.0",
+            rxjava_adapter = "2.4.0",
+            okhttp3 = "3.11.0",
+            logging_interceptor = "3.11.0",
+            gson = "2.8.2",
+            glide = "3.7.0",
+            aspectjrt = "1.8.9",
+    ]
+
+    dependencies = [
+            junit                          : "junit:junit:$rootProject.junit",
+            testRunner                     : "com.android.support.test:runner:$rootProject.testRunner",
+            testEspresso                   : "com.android.support.test.espresso:espresso-core:$rootProject.testEspresso",
+            appcompatV7                    : "com.android.support:appcompat-v7:$rootProject.supportAppcompatVersion",
+            design                         : "com.android.support:design:$rootProject.supportAppcompatVersion",
+            rxjava                         : "io.reactivex.rxjava2:rxjava:$rootProject.rxjava",
+            rxandroid                      : "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroid",
+            rxlifecycle                    : "com.trello:rxlifecycle:$rootProject.rxlifecycle",
+            rxlifecycle_components         : "com.trello:rxlifecycle-components:$rootProject.rxlifecycle_components",
+            retrofit                       : "com.squareup.retrofit2:retrofit:$rootProject.retrofit",
+            retrofit_gson_converter        : "com.squareup.retrofit2:converter-gson:$rootProject.gson_converter",
+            retrofit_scalars_converter     : "com.squareup.retrofit2:converter-scalars:$rootProject.scalars_converter",
+            rxjava_adapter                 : "com.squareup.retrofit2:adapter-rxjava2:$rootProject.rxjava_adapter",
+            okhttp3                        : "com.squareup.okhttp3:okhttp:$rootProject.okhttp3",
+            okhttp3_logging                : "com.squareup.okhttp3:logging-interceptor:$rootProject.logging_interceptor",
+            gson                           : "com.google.code.gson:gson:$rootProject.gson",
+            glide                          : "com.github.bumptech.glide:glide:$rootProject.glide",
+            aspectjrt                      : "org.aspectj:aspectjrt:$rootProject.aspectjrt",
+    ]
+}
